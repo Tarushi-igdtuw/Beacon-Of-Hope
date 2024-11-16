@@ -92,6 +92,17 @@ With rising mental health challenges worldwide, many people struggle to find con
 **3. Voice Input**
 * Voice Journaling: To enhance accessibility, we’ll integrate voice input, allowing users to speak their gratitude entries or replies when typing isn’t convenient. This feature will convert speech to text, making it easier for users to engage with the platform.
 
+* ## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
 ## Made By :
 [![Abhiruchi](https://github.com/abhi03ruchi.png?size=60)](https://github.com/abhi03ruchi)
 [![Tarushi](https://github.com/Tarushi-igdtuw.png?size=60)](https://github.com/Tarushi-igdtuw)
