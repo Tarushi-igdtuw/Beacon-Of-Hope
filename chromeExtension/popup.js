@@ -26,41 +26,44 @@ document.getElementById('submit').addEventListener('click', function () {
   }
 });
 
-function saveMood(mood) {
-  const moodEntry = {
-    mood: mood,
-    timestamp: new Date().toLocaleString() // Record timestamp
-  };
 
-  chrome.storage.sync.get(['moodHistory'], function (result) {
-    let moodHistory = result.moodHistory || [];
-    moodHistory.push(moodEntry);
+// 
+// function saveMood(mood) {
+//   const moodEntry = {
+//     mood: mood,
+//     timestamp: new Date().toLocaleString() // Record timestamp
+//   };
 
-    chrome.storage.sync.set({ moodHistory: moodHistory }, function () {
-      console.log('Mood saved:', moodEntry);
-      // Log to confirm success
-      console.log('Current mood history:', moodHistory);
-    });
-  });
-}
+//   chrome.storage.sync.get(['moodHistory'], function (result) {
+//     let moodHistory = result.moodHistory || [];
+//     moodHistory.push(moodEntry);
 
-// Function to send mood to the API
-function sendMoodToAPI(mood) {
-  const moodData = {
-    mood: mood,
-    date: new Date().toISOString()  // Using ISO format for date
-  };
+//     chrome.storage.sync.set({ moodHistory: moodHistory }, function () {
+//       console.log('Mood saved:', moodEntry);
+//       // Log to confirm success
+//       console.log('Current mood history:', moodHistory);
+//     });
+//   });
+// }
 
-  fetch('http://localhost:3000/moods', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(moodData),
-  })
-    .then(response => response.json())
-    .then(data => console.log('Mood data sent successfully:', data))
-    .catch((error) => console.error('Error sending mood data:', error));
-}
+
+// // Function to send mood to the API
+// function sendMoodToAPI(mood) {
+//   const moodData = {
+//     mood: mood,
+//     date: new Date().toISOString()  // Using ISO format for date
+//   };
+
+//   fetch('http://localhost:3000/moods', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json',
+//     },
+//     body: JSON.stringify(moodData),
+//   })
+//     .then(response => response.json())
+//     .then(data => console.log('Mood data sent successfully:', data))
+//     .catch((error) => console.error('Error sending mood data:', error));
+// }
 
 
