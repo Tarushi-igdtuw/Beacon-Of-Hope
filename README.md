@@ -92,7 +92,7 @@ With rising mental health challenges worldwide, many people struggle to find con
 **3. Voice Input**
 * Voice Journaling: To enhance accessibility, we’ll integrate voice input, allowing users to speak their gratitude entries or replies when typing isn’t convenient. This feature will convert speech to text, making it easier for users to engage with the platform.
 
-* ## Contributing
+## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
 to discuss what you would like to change.
