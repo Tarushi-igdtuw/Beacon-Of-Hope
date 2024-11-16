@@ -97,5 +97,3 @@ With rising mental health challenges worldwide, many people struggle to find con
 [![Tarushi](https://github.com/Tarushi-igdtuw.png?size=60)](https://github.com/Tarushi-igdtuw)
 [![Harshita](https://github.com/harshita099.png?size=60)](https://github.com/harshita099)
 
-  
-# Gfg-Hackfest
